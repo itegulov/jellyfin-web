@@ -91,6 +91,11 @@ _define("JavascriptSubtitlesOctopus", function() {
     return libass_wasm;
 });
 
+var epubjs = require("epubjs");
+_define("epubjs", function () {
+    return epubjs;
+});
+
 // material-icons
 var material_icons = require("material-design-icons-iconfont/dist/material-design-icons.css");
 _define("material-icons", function() {

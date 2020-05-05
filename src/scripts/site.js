@@ -548,6 +548,7 @@ var AppInfo = {};
             "components/htmlaudioplayer/plugin",
             "components/htmlvideoplayer/plugin",
             "components/photoplayer/plugin",
+            "components/bookplayer/plugin",
             "components/youtubeplayer/plugin",
             "components/backdropscreensaver/plugin",
             "components/logoscreensaver/plugin"
@@ -726,6 +727,7 @@ var AppInfo = {};
                     "fetch",
                     "flvjs",
                     "jstree",
+                    "epubjs",
                     "jQuery",
                     "hlsjs",
                     "howler",

@@ -25,6 +25,7 @@
   "dependencies": {
     "alameda": "^1.4.0",
     "document-register-element": "^1.14.3",
+    "epubjs": "^0.3.85",
     "flv.js": "^1.5.0",
     "hls.js": "^0.13.1",
     "howler": "^2.1.3",
