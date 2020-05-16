@@ -2197,9 +2197,16 @@ define(['events', 'datetime', 'appSettings', 'itemHelper', 'pluginManager', 'pla
                 return Promise.reject();
             }
 
-            if (firstItem.MediaType === "Photo" || firstItem.MediaType === "Book") {
+            if (firstItem.MediaType === "Photo") {
 
                 return playOther(items, options, user);
+            } else if (firstItem.MediaType === "Book") {
+                return playOther(items, options, user).then(function () {
+                    var player = getPlayer(firstItem, options);
+                    setCurrentPlayerInternal(player);
+                }, function () {
+                    // TODO: show error message
+                });
             }
 
             var apiClient = connectionManager.getApiClient(firstItem.ServerId);

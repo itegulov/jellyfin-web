@@ -996,6 +996,10 @@ var AppInfo = {};
                 LibraryMenu.setTitle(title);
             };
 
+            appRouter.showEpubReader = function () {
+                return Dashboard.navigate('epubreader.html');
+            };
+
             appRouter.getRouteUrl = function (item, options) {
                 if (!item) {
                     throw new Error("item cannot be null");

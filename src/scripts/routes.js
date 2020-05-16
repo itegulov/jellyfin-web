@@ -432,6 +432,15 @@ define([
     });
 
     defineRoute({
+        path: '/epubreader.html',
+        transition: 'fade',
+        controller: 'bookplayer/epubreader',
+        autoFocus: false,
+        type: 'epub-reader',
+        fullscreen: true
+    });
+
+    defineRoute({
         path: "/",
         isDefaultRoute: true,
         autoFocus: false
